@@ -10,34 +10,69 @@
         <h1>Pesquisa online</h1>
     </header>
     <section>
-        <form action="" method="get">   
-            <fieldset>  
-                <!--DADOS PESSOAIS-->
-                
-            <legend>DADOS PESSOAIS</legend>
-            <label for="UserName">Nome</label>
-            <input type="text" name="UserName" required>
+        <form action="" method="get"></form>
+                <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                 <input type="text" name="userName" required> 
+                <br>
+                <label for="age">Idade</label>
+                <input type="number"name="userAge" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de nacimento</label>
+                <input type="date" name="birthDate">
+                <br>
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" required>
+                <br>
+                <label for="UsePhoneNumber">Telefone</label>
+                <input type="tel" name="UsePhoneNumber" pattern="[0-9]{11}" placeholder="DDD + numero sem espaços ou hífen">
+                <br>
+                <label for="userImage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userImage">
+                </fieldset>
+
+            <fieldset>
+            <legend>Perfil</legend>
+            <p>Gênero</p>
+            <input type="radio" name="userGender" value="Feminino">
+            <label for="userGender">Feminino</label>
+            <input type="radio" name="userGender" value="Masculino">
+            <label for="userGender">Masculino</label>
+             <input type="radio" name="userGender" value="notInformed">
+            <label for="userGender">Prefiro não informar</label>
             <br>
-            <label for="userAge">Idade</label>
-            <input type="number" name="UserAge" min="12" max="100" required>
-            <br>
-            <label for="birthDate">Data de nascimento</label>
-            <input type="date" name="birthDate">
-            <br>
-            <label for="userEmail">Email</label>
-            <input type="email" name="userEmail" required>
-            <br>
-            <label for="userPhoneNumber">Telefone</label>
-            <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hifen">
-            <br>
-            <label for="userImage">Uploud de foto</label>
-            <input type="file" accept="image/*" name="userImage">
-            <br>
+            <label for="maritalStatus">Estado civil:</label>
+            <select name="maritalStatus">
+            <option value="notInformet">Selecione...</option>
+             <option value="casado">Casado</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="uniao estavel">união estável</option>
+            </select>
+            <label for="UserStatus">Estado:</label>
+            <select name="UserStatus"> 
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+             <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            </select>
             </fieldset>
-            <button name="UserName">Enviar</button>
-        </form>    
-    </section>
-        
+
+    </section>'
+    </main>
+
     <footer></footer>
 </body>
 </html>
